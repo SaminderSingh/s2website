@@ -1,0 +1,38 @@
+//- Base file for template (block elements will change)
+doctype html
+html
+  head
+    title Saminder Singh
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+
+    block scripts
+    block style
+body
+    
+    div.searchbox 
+      input(type="text" placeholder="Search Here")  
+    div#Nav-Container
+      div#Sub-Container
+       div#logo
+        h2 S2
+        
+
+       nav
+        ul#naviteam
+         i.bi.bi-house
+         li #[a(href='/')  Home]
+         i.bi.bi-filter-circle 
+         li #[a(href='/') About]
+         i.bi.bi-telephone  
+         li #[a(href='/contact') Contact]  
+         i.bi.bi.bi-sliders
+         li #[a(href='/') Service]
+         li   
+          a.Search(href='/')
+            img.open(src="../Static/clipart2020073.png")
+            img.close(src="../Static/pngcross.jpg")
+    block content
+    

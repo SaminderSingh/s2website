@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+#Nav-Container{
+    /* border: 2px solid white; */
+    height: 23px;
+    padding: 1rem 2rem;
+    margin-top: -3.4rem;
+    z-index: 500;
+    position: relative;
+    background-color:  #FFFAFA;
+    
+    
+}
+.bi.bi-house{
+    margin-top: 0.33rem;
+    color: rgb(0, 0, 0);
+}
+.bi.bi-filter-circle{
+    margin-top: 0.33rem;
+    color: rgb(0, 0, 0);
+}
+.bi.bi-telephone {
+    margin-top: 0.33rem;
+    color: black;
+}
+.bi.bi.bi-sliders{
+    margin-top: 0.33rem;
+    color: black;
+}
+#Sub-Container{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+
+}
+#naviteam{
+    display: flex;
+    flex-direction: row;
+}
+#logo h2{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: -1rem 1rem;
+}
+#naviteam li{
+    list-style: none;
+}
+#introSection a{
+    text-decoration: none;
+}
+#introSection button{
+    padding: 0.9rem 3rem;
+    border-radius: 0.5rem;
+    background-color:#641010c9 ;
+    font-size: 1.1rem;
+    color: white;
+    border: 3.1px solid white;
+    /* font-family: 'Poppins'; */
+    font-family: 'Roboto', sans-serif;
+
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#introSection button {background-image: linear-gradient(to right, #C33764 0%, #1D2671  51%, #C33764  100%)}
+#introSection button {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 14px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ #introSection button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+   #introSection h1{
+      padding-bottom: 4rem;
+      grid-column: 1;
+      grid-row: 1;
+      z-index: 1;
+      text-transform: uppercase;
+      animation: glow 2s ease-in-out infinite alternate;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 20px #2d9da9;
+      }
+      to {
+        text-shadow: 0 0 30px #34b3c1, 0 0 25px #4dbbc7;
+      }
+    }
+  
+
+
+#introSection h1{
+    font-weight: bolder;
+    padding: 3rem 1rem;
+    /* font-family: 'Roboto', sans-serif; */
+}
+#naviteam li a{
+    text-decoration: none;
+    /* padding: 0 3rem; */
+    font-size: 1.2rem;
+    padding-right: 4rem;
+    padding-left: 0.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.Search img{
+    height: 18px;
+    width: 18px;
+    padding: 0.5rem;
+}
+.Search a{
+    text-decoration: none;
+    list-style: none;
+}
+#naviteam ul li a:last-child{
+    padding: 0rem;
+}
+#introSection{
+    display: flex;
+    height: 784px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+#introSection::before{
+    height: 113%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    content: "";
+    top: 56px;
+    position: absolute;
+    background: url('/Static/pexels-mikechie-esparagoza-1601775.jpg') no-repeat center center/ cover;
+}
+#About{
+    text-align: center;
+    margin-top: 4rem;
+    height: 250px;
+    background-color: #e3e3e3;
+    color: black;
+    font-weight: bolder;
+}
+#About h2{
+    padding:2.3rem;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+}
+#About p{
+    font-size:1.5rem;
+}
+#firstbox{
+    background-color: #e3e3e3;
+    /* border: 2px solid #1b1b1b; */
+    margin-top: 3rem;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#firstbox h2{
+    font-family: 'Kanit', sans-serif;
+}
+#firstbox h2 img{
+    display: block;
+    margin:2px auto;
+    cursor: pointer;
+    filter: invert(100%);
+    transition: all 0.4s ease-in-out 0s ;
+}
+#firstbox h2 img:hover{
+    transform: rotate(360deg);
+
+}
+#secondbox{
+    background-color: #e3e3e3; 
+    /* border: 2px solid rgb(0, 38, 255); */
+}
+#thirdbox{
+    margin: 4rem 10rem;
+    height: 33rem;
+    width: 24rem;
+    background-color: #872d2d;
+    padding-top: 1.1rem;
+    /* border: 2px solid rgb(72, 255, 0); */
+}
+#fourthbox{
+    height: 9rem;
+    width: 6rem;
+    margin-left: -4rem;
+    margin-top: 3rem;
+    padding: 9rem 15rem;
+    background-color: #e3e3e3;
+    /* border: 2px solid rgb(135, 24, 163); */
+    background:url('../Static/pexels-bryan-catota-3756766.jpg') no-repeat center center/ cover;
+}
+
+#fifthbox{
+    height: 15rem;
+    width: 25rem;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    background-color: #ffffff;
+    color: black;
+}
+#fifthbox h3{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+#fifthbox h3 p{
+    padding: 1rem 0rem;
+  color: black;
+  font-size: 1rem;
+}
+#btn{
+    padding: 1rem 1rem;
+    margin:1rem 0rem;
+    background-color: black;
+    color: white;
+}
+
+#btn {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+#btn{
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+   background-size: 200% auto;
+   color: white;   
+            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+#btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.searchbox{
+    width: 1200px;
+    text-align: right;
+    margin: 0 auto;
+    position: relative;
+    outline: none;
+    top: 0rem;
+}
+.searchbox:active{
+    top: 56px;
+}
+.searchbox input{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.searchbox input::placeholder{
+    color: b3b3b3;
+}
+
+
+
+.Search{
+    display: flex;
+   position: relative;
+}
+.Search img{
+    position: absolute;
+}
+.Search .close{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 300ms;
+}
+.Search .open{
+    transition: 300ms;
+    pointer-events: auto;
+}
+/* Active class */
+.Search.active .open{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+}
+
+.Search.active .close{
+    opacity: 1;
+    pointer-events:auto;
+    transform: translateY(0);
+}

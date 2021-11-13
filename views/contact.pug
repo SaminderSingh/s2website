@@ -1,0 +1,29 @@
+extend base.pug
+
+block scripts 
+    script(src="  ../Static/index.js") 
+block style 
+    style
+      include ../Static/style.css
+      include ../Static/Contactstyle.css
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+block content 
+ div#container
+  div#SubContainer
+   div.SmallBox
+    div#left
+     h3 Join Us Now
+    div#right
+     form(action="/contact" method="post")
+      input(id="name" name="name" type="text" placeholder="Enter Name")  
+      input(id="Address" name="Address" type="text" placeholder="Address")  
+      input(id="Contact" name="Contact" type="number" placeholder="Contact")  
+      div#checkSbox 
+       input(id= "checkbox" type='checkbox' name='agreement' checked)
+       label  I accept the new Terms and Conditions
+
+      button#btn SUBMIT
+      div.logo
+       a(class='fa fa-twitter' href='/')
+       a(class='fa fa-google' href='/')
+       a(class='fa fa-linkedin' href='/')
