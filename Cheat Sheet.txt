@@ -1,0 +1,11 @@
+touch .gitignore
+git config --global user.name saminder
+git config --global user.email ssaminder180@gmail.com
+gir init
+git add. //staging area
+git commit -m "Initial commit"
+git status //Just to see working tree clean or not
+ssh-keygen -t ed25519-sk -C "your_email@example.com"
+tail <path to id_rsa.pub> #add this key to github account
+git remote add orign <ssh url.git>
+git push origin master
